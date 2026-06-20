@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Premium Electrical Services | 24/7 Emergency Electrician</title>
+    <meta name="description" content="Top-rated local electrician for homes and commercial properties. 24/7 emergency support, 18-minute response time, licensed & certified. Get a free quote today.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Premium Electrical Services | 24/7 Emergency">
+    <meta property="og:description" content="Top-rated local electrician. Fast, reliable, and transparent pricing.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- intl-tel-input CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Premium Electrical Services",
+      "image": "https://placehold.co/1200x600/0052FF/FFFFFF?text=Premium+Electrical",
+      "telephone": "+1-800-555-0199",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Energy Blvd",
+        "addressLocality": "Metropolis",
+        "addressRegion": "NY",
+        "postalCode": "10001",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Sticky Emergency Banner -->
+    <div class="emergency-banner" id="emergencyBanner">
+        <div class="container banner-inner">
+            <div class="banner-text">
+                <span class="pulse-dot"></span>
+                <strong>24/7 EMERGENCY ELECTRICIAN:</strong> Average Response Time: 18 Minutes
+            </div>
+            <a href="tel:+18005550199" class="banner-cta"><i class="fas fa-phone-alt"></i> Call Now</a>
+        </div>
+    </div>
+
+    <!-- Live Activity Bar -->
+    <div class="activity-bar">
+        <div class="container">
+            <div class="activity-ticker">
+                <i class="fas fa-bolt text-accent"></i> <span id="dynamicActivity">3 Emergency Requests Received Today</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <i class="fas fa-plug"></i> VoltPro <span class="logo-text">Electric</span>
+            </a>
+            <nav class="desktop-nav">
+                <a href="#services">Services</a>
+                <a href="#commercial">Commercial</a>
+                <a href="#pricing">Estimator</a>
+                <a href="#reviews">Reviews</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-primary" onclick="openModal('emergencyModal')">Request Service</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-check"></i> Licensed & Insured Professionals
+                </div>
+                <h1>Fast, Reliable <br><span class="text-accent">Electrical Services</span> When You Need Them Most.</h1>
+                <p class="hero-sub">From minor residential repairs to large commercial installations. Transparent pricing, guaranteed workmanship, and zero hidden fees.</p>
+                
+                <div class="hero-actions">
+                    <a href="tel:+18005550199" class="btn btn-primary btn-large animate-pulse">
+                        <i class="fas fa-phone-alt"></i> Call for Emergency
+                    </a>
+                    <button class="btn btn-outline-white btn-large" onclick="openModal('quoteModal')">
+                        <i class="fas fa-calculator"></i> Get a Free Quote
+                    </button>
+                </div>
+
+                <div class="hero-trust-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-stopwatch text-accent"></i>
+                        <div>
+                            <strong>18 Minutes</strong>
+                            <span>Avg. Response</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star text-accent"></i>
+                        <div>
+                            <strong>4.9/5 Rating</strong>
+                            <span>1,200+ Reviews</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-check-circle text-accent"></i>
+                        <div>
+                            <strong>5,000+ Jobs</strong>
+                            <span>Completed Locally</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Guarantees Section -->
+    <section class="guarantees section-bg-light section">
+        <div class="container">
+            <div class="grid-4 text-center">
+                <div class="guarantee-card">
+                    <div class="g-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Workmanship Guarantee</h3>
+                    <p>We stand behind our work. 100% satisfaction guaranteed.</p>
+                </div>
+                <div class="guarantee-card">
+                    <div class="g-icon"><i class="fas fa-tags"></i></div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Upfront estimates. No hidden charges, ever.</p>
+                </div>
+                <div class="guarantee-card">
+                    <div class="g-icon"><i class="fas fa-user-check"></i></div>
+                    <h3>Certified Techs</h3>
+                    <p>Fully licensed, background-checked, and highly trained.</p>
+                </div>
+                <div class="guarantee-card">
+                    <div class="g-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h3>Same-Day Service</h3>
+                    <p>Available 24/7 for all your emergency electrical needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Comprehensive Electrical Services</h2>
+            <p class="section-subtitle text-center">Professional solutions for residential and commercial properties.</p>
+            
+            <div class="grid-4">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="sc-img">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="House Wiring">
+                    </div>
+                    <div class="sc-content">
+                        <i class="fas fa-home"></i>
+                        <h3>House Wiring</h3>
+                        <p>Complete rewiring, panel upgrades, and smart home integrations.</p>
+                        <a href="#" class="btn-link" onclick="openModal('quoteModal')">Get Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="sc-img">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80" alt="Electrical Fault Repair">
+                    </div>
+                    <div class="sc-content">
+                        <i class="fas fa-tools"></i>
+                        <h3>Fault Repair</h3>
+                        <p>Rapid diagnostics and repair for short circuits and outages.</p>
+                        <a href="#" class="btn-link" onclick="openModal('emergencyModal')">Fix Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="sc-img">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=600&q=80" alt="Solar Installation">
+                    </div>
+                    <div class="sc-content">
+                        <i class="fas fa-solar-panel"></i>
+                        <h3>Solar Installation</h3>
+                        <p>High-efficiency solar setups for homes and businesses.</p>
+                        <a href="#" class="btn-link" onclick="openModal('quoteModal')">Get Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="sc-img">
+                        <img src="https://images.unsplash.com/photo-1634733988138-bf2c3a2a13fa?auto=format&fit=crop&w=600&q=80" alt="Generator Installation">
+                    </div>
+                    <div class="sc-content">
+                        <i class="fas fa-car-battery"></i>
+                        <h3>Generators & UPS</h3>
+                        <p>Seamless backup power solutions to keep you running.</p>
+                        <a href="#" class="btn-link" onclick="openModal('quoteModal')">Get Quote <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Client Focus -->
+    <section id="commercial" class="section section-bg-navy">
+        <div class="container">
+            <div class="grid-2 align-center">
+                <div class="commercial-text">
+                    <h2>Trusted by Local Businesses</h2>
+                    <p>Downtime means lost revenue. We provide specialized, priority electrical services for commercial properties.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Offices & Retail Shops</li>
+                        <li><i class="fas fa-check"></i> Restaurants & Cafes</li>
+                        <li><i class="fas fa-check"></i> Warehouses & Factories</li>
+                        <li><i class="fas fa-check"></i> Property Management Firms</li>
+                    </ul>
+                    <br>
+                    <button class="btn btn-accent btn-large" onclick="openModal('quoteModal')">Request Commercial Assessment</button>
+                </div>
+                <div class="commercial-image">
+                    <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80" alt="Commercial Electrical Services" class="rounded-shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency vs Standard Comparison -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Service Options</h2>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Standard Service</th>
+                            <th class="highlight-col">Emergency Service</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Response Time</td>
+                            <td>Within 24-48 Hours</td>
+                            <td class="highlight-col text-accent-dark"><strong>Under 30 Minutes</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Availability</td>
+                            <td>Business Hours (9-5)</td>
+                            <td class="highlight-col"><strong>24/7 / 365 Days</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Dispatch Priority</td>
+                            <td>Scheduled Slot</td>
+                            <td class="highlight-col"><strong>Immediate Dispatch</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Best For</td>
+                            <td>Upgrades, Inspections</td>
+                            <td class="highlight-col"><strong>Power Outages, Hazards</strong></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-outline" onclick="openModal('quoteModal')">Book Standard</button></td>
+                            <td class="highlight-col"><button class="btn btn-primary" onclick="openModal('emergencyModal')">Request Emergency</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Funnel / Timeline -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">How We Work</h2>
+            <p class="section-subtitle text-center">A seamless, transparent process from start to finish.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="t-icon">1</div>
+                    <div class="t-content">
+                        <h4>Contact Us</h4>
+                        <p>Call or submit a request online.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="t-icon">2</div>
+                    <div class="t-content">
+                        <h4>Instant Assessment</h4>
+                        <p>We evaluate your needs and provide a clear estimate.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="t-icon">3</div>
+                    <div class="t-content">
+                        <h4>Technician Assigned</h4>
+                        <p>A licensed pro is dispatched to your location.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="t-icon">4</div>
+                    <div class="t-content">
+                        <h4>Service Completed</h4>
+                        <p>Work is done safely, up to code, and tested.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="t-icon">5</div>
+                    <div class="t-content">
+                        <h4>Satisfaction Follow-Up</h4>
+                        <p>We ensure you are 100% happy with the result.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Inspection Offer (Conversion) -->
+    <section class="section section-bg-navy offer-banner">
+        <div class="container text-center">
+            <h2>Claim Your Free Electrical Safety Inspection</h2>
+            <p>Prevent hazards before they happen. Limited time offer for local residents.</p>
+            <button class="btn btn-accent btn-large" onclick="openModal('quoteModal')">Get Your Free Quote Now</button>
+        </div>
+    </section>
+
+    <!-- Quote Estimator (Frontend Demo) -->
+    <section id="pricing" class="section section-bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Interactive Quote Estimator</h2>
+            <p class="section-subtitle text-center">Get a ballpark figure instantly. No signup required.</p>
+            
+            <div class="estimator-box">
+                <form id="estimatorForm" onsubmit="event.preventDefault(); calculateQuote();">
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label class="form-label">Service Type</label>
+                            <select class="form-select" id="estService">
+                                <option value="150">General Fault Repair</option>
+                                <option value="300">Panel Upgrade</option>
+                                <option value="80">Wiring Inspection</option>
+                                <option value="500">Solar/Generator Prep</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Property Type</label>
+                            <select class="form-select" id="estProperty">
+                                <option value="1">Residential</option>
+                                <option value="1.5">Commercial (+50%)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary btn-large">Calculate Estimate</button>
+                    </div>
+                </form>
+                <div id="estimatorResult" class="estimator-result hidden">
+                    <h3>Estimated Range:</h3>
+                    <div class="price-display"><span id="priceValue">$0 - $0</span></div>
+                    <p class="small text-muted">*This is a demo frontend calculation. Final quotes require on-site assessment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Projects -->
+    <section class="section section-bg-navy text-center">
+        <div class="container">
+            <h2 class="section-title text-light">Recent Projects</h2>
+            <p class="section-subtitle text-light">See the quality of our work firsthand.</p>
+            <div class="grid-4">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1544427506-c821175658e3?auto=format&fit=crop&w=400&q=80" alt="Wiring Upgrade" class="rounded-shadow">
+                    <h4 class="mt-1 text-light">Wiring Upgrade</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1509391366360-1f9509ce1581?auto=format&fit=crop&w=400&q=80" alt="Solar Installation" class="rounded-shadow">
+                    <h4 class="mt-1 text-light">Solar Panel Setup</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1598257262450-48e02511c97a?auto=format&fit=crop&w=400&q=80" alt="Generator Installation" class="rounded-shadow">
+                    <h4 class="mt-1 text-light">Backup Generator</h4>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&q=80" alt="CCTV Installation" class="rounded-shadow">
+                    <h4 class="mt-1 text-light">Commercial CCTV</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance Plans -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Maintenance Plans</h2>
+            <p class="section-subtitle text-center">Prevent emergencies with our tailored maintenance packages.</p>
+            <div class="grid-3">
+                <div class="pricing-card">
+                    <h3>Basic Plan</h3>
+                    <p class="price-display">$49<span class="small">/mo</span></p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Annual Inspection</li>
+                        <li><i class="fas fa-check"></i> 10% Off Repairs</li>
+                        <li><i class="fas fa-check"></i> Business Hours Support</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block mt-2" onclick="openModal('quoteModal')">Select Basic</button>
+                </div>
+                <div class="pricing-card highlighted-card">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Standard Plan</h3>
+                    <p class="price-display text-primary">$99<span class="small">/mo</span></p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Bi-Annual Inspections</li>
+                        <li><i class="fas fa-check"></i> 20% Off Repairs</li>
+                        <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                        <li><i class="fas fa-check"></i> Free Minor Fixes</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block mt-2" onclick="openModal('quoteModal')">Select Standard</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Premium Plan</h3>
+                    <p class="price-display">$199<span class="small">/mo</span></p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Quarterly Inspections</li>
+                        <li><i class="fas fa-check"></i> 30% Off Repairs</li>
+                        <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check"></i> Same-Day Free Dispatch</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block mt-2" onclick="openModal('quoteModal')">Select Premium</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section id="reviews" class="section section-bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider mt-2">
+                <div class="testimonial-slide active">
+                    <div class="stars text-accent mb-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"An absolute lifesaver! Our power went out at 2 AM, and VoltPro had a technician here in 20 minutes. Highly recommended for emergencies."</p>
+                    <p class="testimonial-author mt-1"><strong>Sarah Jenkins</strong> - Homeowner</p>
+                </div>
+                <div class="testimonial-slide hidden">
+                    <div class="stars text-accent mb-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Upgraded the electrical panel for our entire restaurant. Professional, transparent pricing, and zero disruption to our business hours."</p>
+                    <p class="testimonial-author mt-1"><strong>David Chen</strong> - Restaurant Owner</p>
+                </div>
+            </div>
+            <button class="btn btn-outline mt-2" onclick="toggleTestimonial()">Next Review <i class="fas fa-chevron-right ml-1"></i></button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            <div class="faq-accordion mt-2" style="max-width: 800px; margin: 2rem auto 0;">
+                <div class="faq-item">
+                    <button class="faq-question">What qualifies as an electrical emergency? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer hidden"><p class="pt-1">Sparks, burning smells, sudden complete power loss, or exposed live wires are emergencies. When in doubt, call us immediately.</p></div>
+                </div>
+                <div class="faq-item mt-1">
+                    <button class="faq-question">Do you provide free quotes? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer hidden"><p class="pt-1">Yes, we offer free, transparent estimates before starting any work. No hidden fees.</p></div>
+                </div>
+                <div class="faq-item mt-1">
+                    <button class="faq-question">Are your electricians licensed? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer hidden"><p class="pt-1">Absolutely. Every technician is fully licensed, insured, and thoroughly background-checked for your safety.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Electrical Safety & Tips</h2>
+            <div class="grid-3 mt-2">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b6?auto=format&fit=crop&w=400&q=80" alt="Safety Tips">
+                    <div class="bc-content">
+                        <h4>Top 5 Signs You Need a Panel Upgrade</h4>
+                        <a href="#" class="btn-link mt-1">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=400&q=80" alt="Solar Guide">
+                    <div class="bc-content">
+                        <h4>Is Solar Right for Your Commercial Property?</h4>
+                        <a href="#" class="btn-link mt-1">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=400&q=80" alt="Generator Maintenance">
+                    <div class="bc-content">
+                        <h4>Pre-Winter Generator Maintenance Checklist</h4>
+                        <a href="#" class="btn-link mt-1">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Trust / Coverage -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Serving Local Communities Since 2010</h2>
+                <p>We are your neighborhood electricians, familiar with local building codes.</p>
+            </div>
+            <div class="grid-5 area-cards mt-2">
+                <div class="area-card"><i class="fas fa-map-marker-alt"></i> DHA</div>
+                <div class="area-card"><i class="fas fa-map-marker-alt"></i> Bahria Town</div>
+                <div class="area-card"><i class="fas fa-map-marker-alt"></i> Johar Town</div>
+                <div class="area-card"><i class="fas fa-map-marker-alt"></i> Gulberg</div>
+                <div class="area-card"><i class="fas fa-map-marker-alt"></i> Model Town</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Form -->
+    <footer class="main-footer section-bg-navy">
+        <div class="container">
+            <div class="grid-2">
+                <div class="footer-info">
+                    <a href="#" class="logo text-light">
+                        <i class="fas fa-plug text-accent"></i> VoltPro <span class="logo-text">Electric</span>
+                    </a>
+                    <p class="mt-1">Premium electrical solutions for modern homes and businesses. Safety and satisfaction guaranteed.</p>
+                    <div class="contact-info mt-2">
+                        <p><i class="fas fa-phone-alt text-accent"></i> +1 (800) 555-0199</p>
+                        <p><i class="fas fa-envelope text-accent"></i> service@voltprodemo.com</p>
+                        <p><i class="fas fa-map-pin text-accent"></i> 123 Energy Blvd, Metropolis</p>
+                    </div>
+                </div>
+                <div class="footer-form-wrapper">
+                    <h3 class="text-light">Drop Us a Message</h3>
+                    <form id="contactForm" class="demo-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control phone-input" placeholder="Phone Number" required>
+                        </div>
+                        <div class="grid-2" style="gap:15px; margin-bottom:1.5rem;">
+                            <select class="form-select" required>
+                                <option value="" disabled selected>Select Province</option>
+                                <option>Punjab</option>
+                                <option>Sindh</option>
+                                <option>KPK</option>
+                                <option>Balochistan</option>
+                                <option>Islamabad</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="City" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-3 border-top pt-2">
+                <p>&copy; 2026 VoltPro Electric Demo. All rights reserved. Built for Conversion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content text-center">
+            <span class="close-modal" onclick="closeModal('successModal')">&times;</span>
+            <div class="modal-icon success-icon"><i class="fas fa-check-circle"></i></div>
+            <h2>Request Received!</h2>
+            <p><strong>This is a demo version.</strong> In the customized production version, quote requests and service bookings will be processed automatically to your CRM or Email.</p>
+            <button class="btn btn-primary mt-2" onclick="closeModal('successModal')">Got It</button>
+        </div>
+    </div>
+
+    <!-- Emergency Modal -->
+    <div id="emergencyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('emergencyModal')">&times;</span>
+            <h2><i class="fas fa-bolt text-accent"></i> Emergency Request</h2>
+            <p>Fill out the details below for immediate dispatch.</p>
+            <form class="demo-form mt-2">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control phone-input" required>
+                </div>
+                <div class="grid-2" style="gap:15px; margin-bottom:1.5rem;">
+                    <div>
+                        <label class="form-label">Province</label>
+                        <select class="form-select" required>
+                            <option value="" disabled selected>Province</option>
+                            <option>Punjab</option>
+                            <option>Sindh</option>
+                            <option>KPK</option>
+                            <option>Balochistan</option>
+                            <option>Islamabad</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">City</label>
+                        <input type="text" class="form-control" placeholder="City" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Location / Address</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Urgency Level</label>
+                    <select class="form-select">
+                        <option>Critical (Sparks/Smoke/Outage)</option>
+                        <option>High (Needs fixing today)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-alert btn-block">Request Immediate Help</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('quoteModal')">&times;</span>
+            <h2>Request a Quote</h2>
+            <p>We'll get back to you with a transparent estimate.</p>
+            <form class="demo-form mt-2">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control phone-input" required>
+                </div>
+                <div class="grid-2" style="gap:15px; margin-bottom:1.5rem;">
+                    <div>
+                        <label class="form-label">Province</label>
+                        <select class="form-select" required>
+                            <option value="" disabled selected>Province</option>
+                            <option>Punjab</option>
+                            <option>Sindh</option>
+                            <option>KPK</option>
+                            <option>Balochistan</option>
+                            <option>Islamabad</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">City</label>
+                        <input type="text" class="form-control" placeholder="City" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Service Needed</label>
+                    <select class="form-select">
+                        <option>Wiring</option>
+                        <option>Solar/Generator</option>
+                        <option>Inspection</option>
+                        <option>Commercial Maintenance</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Get My Quote</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Exit Intent Modal -->
+    <div id="exitModal" class="modal">
+        <div class="modal-content text-center">
+            <span class="close-modal" onclick="closeModal('exitModal')">&times;</span>
+            <div class="modal-icon"><i class="fas fa-shield-alt text-primary"></i></div>
+            <h2>Before You Leave...</h2>
+            <p>Get a <strong>Free Electrical Safety Inspection Quote</strong> to ensure your property is hazard-free.</p>
+            <button class="btn btn-accent btn-large mt-2" onclick="closeModal('exitModal'); openModal('quoteModal');">Claim Free Quote</button>
+        </div>
+    </div>
+
+    <!-- Phone Error Modal -->
+    <div id="phoneErrorModal" class="modal">
+        <div class="modal-content text-center">
+            <span class="close-modal" onclick="closeModal('phoneErrorModal')">&times;</span>
+            <div class="modal-icon text-accent-dark"><i class="fas fa-exclamation-triangle"></i></div>
+            <h2>Invalid Phone Number</h2>
+            <p>Please enter exactly 10 digits for your phone number after the +92 country code (e.g., 3456789080).</p>
+            <button class="btn btn-primary mt-2" onclick="closeModal('phoneErrorModal')">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Global Floating Buttons -->
+    <a href="https://wa.me/1234567890" target="_blank" class="floating-btn float-wa" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="tel:+18005550199" class="floating-btn float-call" aria-label="Call Us">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- Mobile Bottom CTA -->
+    <div class="mobile-bottom-cta">
+        <a href="tel:+18005550199" class="m-btn btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+        <a href="https://wa.me/1234567890" class="m-btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <button class="m-btn btn-quote" onclick="openModal('quoteModal')"><i class="fas fa-calculator"></i> Quote</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
